@@ -30,9 +30,5 @@
             </div>
         {/if}
     </div>
-        
-    <div class="flex gap-1 justify-center z-1">
-        <a href="/home" class="material-glass text-center shrink-0 flex p-2 select-none">browse library</a>
-        <a href="/create" class="material-glass text-center shrink-0 flex p-2 select-none">publish comics</a>
-    </div>
+
 </div>

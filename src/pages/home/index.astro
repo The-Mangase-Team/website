@@ -1,7 +1,25 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../layouts/Home.astro";
+import Home from "../../components/pages/Home/Home.svelte"
+import RightSidebar from "../../components/pages/Home/RightSidebar.svelte"
+
+import Navbar from "../../components/UI/Navbar.svelte";
+
 ---
 
-<Layout>
-    
+<Layout title="mangase">
+    <div class="w-full">
+        <Navbar />
+    </div>
+    <div class="w-full md:w-[80%] my-5 p-ui md:p-0 justify-self-center h-full flex  overflow-hidden gap-2">
+        <div class="w-full h-full flex-5">
+            <!-- CONTENT -->
+            <Home client:load />
+        </div>
+        
+        <!-- RIGHT -->
+        <div class="hidden md:flex w-full h-full flex-2">
+            <RightSidebar />
+        </div>
+    </div>
 </Layout>

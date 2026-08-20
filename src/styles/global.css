@@ -7,7 +7,7 @@
     
     /* UI */
     --font-ui: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --padding-ui: 16px;
+    --padding-ui: 8px;
     --gap-ui: 8px;
     --radius-ui: 8px;
     
@@ -19,6 +19,13 @@
 @layer {
     .page {
         @apply p-2;
+        @apply relative;
+        @apply h-full w-full;
+        @apply bg-main;
+        @apply text-white;
+    }
+
+    .home {
         @apply relative;
         @apply h-full w-full;
         @apply bg-main;
