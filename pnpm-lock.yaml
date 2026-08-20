@@ -20,6 +20,12 @@ importers:
       astro-icon:
         specifier: ^1.2.0
         version: 1.2.0
+      astro-iconset:
+        specifier: ^0.0.6
+        version: 0.0.6(astro@7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(jiti@2.7.0))(svelte@5.56.9)
+      fuse.js:
+        specifier: ^7.5.0
+        version: 7.5.0
       svelte:
         specifier: ^5.56.9
         version: 5.56.9
@@ -855,6 +861,30 @@ packages:
     resolution: {integrity: sha512-0848V2WZuTPhqGSqLeZimLJZ5wmamMtWYzvA2kvg8s2DrUPZ3/nrTcHJWN0eJHt62jy7uvNxgTNiUJGIr7JNxg==}
     engines: {node: '>=22.12.0'}
 
+  astro-iconset@0.0.6:
+    resolution: {integrity: sha512-Xl0pcPNn/0HFO8y52q9sWHTaBR3UFvx5cFAB35kZsWtIpYgFdcBr8IxuD/YmWGFcUJKErWpYgsfz9rjz1v0SMA==}
+    peerDependencies:
+      astro: '>=3.5.0'
+      preact: '>=10.0.0'
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+      solid-js: '>=1.0.0'
+      svelte: '>=4.0.0'
+      vue: '>=3.0.0'
+    peerDependenciesMeta:
+      preact:
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      solid-js:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+
   astro@7.2.4:
     resolution: {integrity: sha512-+cuLsBns2wwUHI9a10xZMbjrF91m7+QNwqTVeljTx0B8Lf+8h0LgVGjdVIL2FALDKD2I565lczeeS3BFC+KdZg==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
@@ -1072,6 +1102,10 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  fuse.js@7.5.0:
+    resolution: {integrity: sha512-sQtrEfA+ez/3G0cCZecF70oqpCRttCexYUG4mUrtWL49ULUzUyxokt5kyqwtKzj1270RaKih+hcP3qLcumccow==}
+    engines: {node: '>=10'}
 
   get-tsconfig@5.0.0-beta.4:
     resolution: {integrity: sha512-7nF7C9fIPFEMHgEMEfgIlO9wDdZ8CyHw27rWciFZfHvHDReIiPhsYuzPRXsfvBCqFy1l8RRyyWV7QLM+ZhUJsQ==}
@@ -2378,6 +2412,15 @@ snapshots:
       '@iconify/types': 2.0.0
       '@iconify/utils': 3.1.4
 
+  astro-iconset@0.0.6(astro@7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(jiti@2.7.0))(svelte@5.56.9):
+    dependencies:
+      '@iconify/tools': 5.0.12
+      '@iconify/types': 2.0.0
+      '@iconify/utils': 3.1.4
+      astro: 7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(jiti@2.7.0)
+    optionalDependencies:
+      svelte: 5.56.9
+
   astro@7.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(jiti@2.7.0):
     dependencies:
       '@astrojs/compiler-rs': 0.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
@@ -2662,6 +2705,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  fuse.js@7.5.0: {}
 
   get-tsconfig@5.0.0-beta.4:
     dependencies:

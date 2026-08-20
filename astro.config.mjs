@@ -7,6 +7,8 @@ import svelte from '@astrojs/svelte';
 
 import icon from 'astro-icon';
 
+import iconset from 'astro-iconset';
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -15,5 +17,7 @@ export default defineConfig({
 
   integrations: [svelte(), icon({
       iconDir: 'src/assets/icons'
+  }), iconset({
+    iconDir: 'src/assets/icons'
   })]
 });

@@ -2,8 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon/components'
 
-// ICONS
-import Link from '../assets/icons/link.svg'
+// COMPONENTS
+import Search from '../components/UI/Search.svelte';
 
 const tagLine = "Read Webcomics, or Publish Them."
 
@@ -20,43 +20,32 @@ const faqQuestions = [
 
 ---
 
-<Layout title="Home — Mangase">
+<Layout title="mangase">
     <div class="h-full justify-self-center p-ui gap-ui m-auto flex flex-col">
         <!-- TITLE -->
-        <div class="md:my-20 select-none">
+        <div class="md:my-10 select-none">
             <h1 class="text-mobile-title font-black md:text-9xl">mangase</h1>
-            <p>{tagLine}</p>
+            <p class="italic -translate-y-24 md:translate-y-0">{tagLine}</p>
         </div>
-
+        
         <!-- SEARCH BAR + [BROWSE LIBRARY] -->
-        <div class="w-full flex flex-col gap-4">
-            <div class="flex items-center bg-white/5 p-0 rounded-ui">
-                <input class="w-full m-0 p-ui outline-none" placeholder="Search for Manga, Webcomics and more..">
-                <span class="group-hover:opacity-100 opacity-100 mx-4 text-[20px]">
-                    <Icon name="search"/>
-                </span>
-            </div>
-            <div class="flex gap-1 justify-center">
-                <a href="/home" class="material-glass min-w-40 text-center shrink-0 flex p-2 select-none">browse library</a>
-                <a href="/create" class="material-glass min-w-40 text-center shrink-0 flex p-2 select-none">publish comics</a>
-            </div>
-        </div>
+        <Search client:load />
 
         <!-- How'd you find out about us? -->
         <div class="group select-none flex gap-1 text-center w-fit mx-auto px-2 items-center mt-5">
-            <a class="group-hover:underline">How'd you find out about us?</a>
+            <a class="group-hover:underline group-hover:cursor-pointer underline-offset-4 uppercase font-ui font-extralight">How'd you find out about us?</a>
             <span class="group-hover:opacity-100 opacity-100 md:opacity-0">
                 <Icon name="link"/>
             </span>
         </div>
 
         <!-- FAQ -->
-        <h2 class="mx-auto font-extralight bg-main text-center w-[10%] translate-y-5">FAQ</h2>
-        <div class="mx-auto p-ui border-t border-b border-white/10 select-none md:max-w-100 max-w-[95%] w-full">
+        <h2 class="mx-auto font-mono font-extralight bg-main text-center w-15 md:w-[10%] translate-y-5.5 md:translate-y-5">FAQ</h2>
+        <div class="mx-auto py-ui border-t border-b border-white/10 select-none md:max-w-100 max-w-[95%] w-full">
             <!-- FAQ Questions -->
             <div class="flex flex-col gap-1 my-3 ">
                 {faqQuestions.map((question) => (
-                    <details class="material-glass hover:bg-primary/50 hover:cursor-pointer duration-ui bg-primary/10 open:bg-primary/50">
+                    <details class="material-glass font-ui hover:bg-primary/50 hover:cursor-pointer duration-ui bg-primary/10 open:bg-primary/50">
                         <summary class="list-none font-bold p-ui ">{question.question}</summary>
                         <p class="text-wrap p-ui ">{question.answer}</p>
                     </details>

@@ -5,10 +5,12 @@
     --color-main: #212121;
     --color-primary: #000000;
     
+    /* UI */
+    --font-ui: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --padding-ui: 16px;
     --gap-ui: 8px;
     --radius-ui: 8px;
-
+    
     --transition-duration-ui: 100ms;
     
     --text-mobile-title: 72px;
