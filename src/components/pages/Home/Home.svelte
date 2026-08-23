@@ -1,10 +1,9 @@
-<main class="p-ui h-full bg-white/5 ">
-    <!-- FOLLOWED MANGAS/WEBCOMICS (VERTICAL) -->
-    <div></div>
-    
-    <!-- RECENTLY ADDED (VERTICAL) -->
-    <div></div>
+<script>
+    import MostPopular from '../../sections/Home/MostPopular.svelte';
+    import NewlyAdded from '../../sections/Home/NewlyAdded.svelte';
+    import RecentlyAdded from '../../sections/Home/RecentlyAdded.svelte';
+</script>
 
-    <!-- MOST POPULAR (ENDLESS) -->
-    <div></div>
+<!-- Comics Billboard -->
+<main class="z-0 font-ui bg-white/5 flex flex-col material-glass border h-full">
 </main>
