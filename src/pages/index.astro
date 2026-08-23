@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Icon } from 'astro-icon/components'
 
 // COMPONENTS
 import Search from '../components/UI/Search.svelte';
@@ -21,7 +20,7 @@ const faqQuestions = [
 ---
 
 <Layout title="mangase">
-    <div class="h-full justify-self-center p-ui gap-ui m-auto flex flex-col">
+    <div class="justify-self-center p-ui gap-ui m-auto flex flex-col">
         <!-- TITLE -->
         <div class="md:my-10 select-none">
             <h1 class="text-mobile-title font-black md:text-9xl">mangase</h1>
@@ -29,22 +28,24 @@ const faqQuestions = [
         </div>
         
         <!-- SEARCH BAR + [BROWSE LIBRARY] -->
-        <Search client:load />
-        <div class="flex gap-1 justify-center z-1">
-            <a href="/home" class="material-glass text-center shrink-0 flex p-2 select-none">browse library</a>
-            <a href="/create" class="material-glass text-center shrink-0 flex p-2 select-none">publish comics</a>
+        <div class="flex flex-col gap-2 my-20">
+            <Search client:load />
+            <div class="flex gap-1 justify-center z-1 font-ui">
+                <a href="/home" class="material-glass hover:bg-primary/20 text-center shrink-0 flex p-2 select-none">browse library</a>
+                <a href="/create" class="material-glass hover:bg-primary/20 text-center shrink-0 flex p-2 select-none">publish comics</a>
+            </div>
         </div>
     
         <!-- How'd you find out about us? -->
-        <div class="group select-none flex gap-1 text-center w-fit mx-auto px-2 items-center mt-5">
+        <!-- <div class="group select-none flex gap-1 text-center w-fit mx-auto px-2 items-center mt-5">
             <a class="group-hover:underline group-hover:cursor-pointer underline-offset-4 uppercase font-ui font-extralight">How'd you find out about us?</a>
             <span class="group-hover:opacity-100 opacity-100 md:opacity-0">
                 <Icon name="link"/>
             </span>
-        </div>
+        </div> -->
 
         <!-- FAQ -->
-        <h2 class="mx-auto font-mono font-extralight bg-main text-center w-15 md:w-[10%] translate-y-5.5 md:translate-y-5">FAQ</h2>
+        <h2 class="mx-auto select-none font-mono font-extralight bg-main text-center w-15 md:w-[10%] translate-y-5.5 md:translate-y-5">FAQ</h2>
         <div class="mx-auto py-ui border-t border-b border-white/10 select-none md:max-w-100 max-w-[95%] w-full">
             <!-- FAQ Questions -->
             <div class="flex flex-col gap-1 my-3 ">

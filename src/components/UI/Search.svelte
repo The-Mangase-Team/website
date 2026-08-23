@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Icon} from "astro-iconset/svelte";
+    import { Icon } from "astro-iconset/svelte";
 
     let searchQuery: string = $state("");
     let showFuzzyOptions: boolean = $state(false);
