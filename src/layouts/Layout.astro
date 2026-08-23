@@ -21,8 +21,12 @@ const { title = "Mangase" } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="page">
-		<slot />
-		<Footer client:load />
+	    <div class="flex-1">
+			<slot />
+		</div>
+		<div>
+            <Footer client:load />
+		</div>
 	</body>
 </html>
 

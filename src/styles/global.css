@@ -19,6 +19,7 @@
 @layer {
     .page {
         @apply p-2;
+        @apply flex flex-col;
         @apply relative;
         @apply h-full w-full;
         @apply bg-main;
@@ -26,6 +27,7 @@
     }
 
     .home {
+        @apply flex flex-col;
         @apply relative;
         @apply h-full w-full;
         @apply bg-main;

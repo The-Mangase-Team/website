@@ -2,7 +2,7 @@
 import '../styles/global.css'
 
 import Footer from '../components/Footer.svelte'
-
+import LeftSidebar from '../components/UI/LeftSidebar.svelte'
 const { title = "Mangase" } = Astro.props; 
 ---
 
@@ -21,8 +21,17 @@ const { title = "Mangase" } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="home">
-		<slot />
-		<Footer client:load />
+	    <div class="h-full flex-1">
+			<div class="h-full flex">
+			    <LeftSidebar />
+			    <div class="flex-1">
+			        <slot />
+			    </div>
+			</div>
+		</div>
+		<div>
+            <Footer client:load />
+		</div>
 	</body>
 </html>
 
