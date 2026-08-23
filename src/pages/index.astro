@@ -31,8 +31,8 @@ const faqQuestions = [
         <div class="flex flex-col gap-2 my-20">
             <Search client:load />
             <div class="flex gap-1 justify-center z-1 font-ui">
-                <a href="/home" class="material-glass hover:bg-primary/20 text-center shrink-0 flex p-2 select-none">browse library</a>
-                <a href="/create" class="material-glass hover:bg-primary/20 text-center shrink-0 flex p-2 select-none">publish comics</a>
+                <a href="/home" class="material-glass border hover:bg-primary/20 text-center shrink-0 flex p-2 select-none">browse library</a>
+                <a href="/create" class="material-glass border hover:bg-primary/20 text-center shrink-0 flex p-2 select-none">publish comics</a>
             </div>
         </div>
     
@@ -50,7 +50,7 @@ const faqQuestions = [
             <!-- FAQ Questions -->
             <div class="flex flex-col gap-1 my-3 ">
                 {faqQuestions.map((question) => (
-                    <details class="material-glass font-ui hover:bg-primary/50 hover:cursor-pointer duration-ui bg-primary/10 open:bg-primary/50">
+                    <details class="material-glass border font-ui hover:bg-primary/50 hover:cursor-pointer duration-ui bg-primary/10 open:bg-primary/50">
                         <summary class="list-none font-bold p-ui ">{question.question}</summary>
                         <p class="text-wrap p-ui ">{question.answer}</p>
                     </details>

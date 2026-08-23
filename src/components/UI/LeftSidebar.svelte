@@ -8,21 +8,24 @@
       {icon: "profile", href: "/profile", text: "Profile"},
       {icon: "send", href: "/messages", text: "Messages"},
       {icon: "options", href: "/settings", text: "Settings"},
+      {icon: "blog", href: "/blogs", text: "Blogs"},
     ]
     
 </script>
 
-<main class="px-2 group py-70 h-full grid items-center text-2xl">
-
-    {#each middleButtons as button}
-        <a href={button.href} class="grid grid-cols-[20%_70%] gap-5 items-center p-ui hover:bg-white/10 rounded-ui">
-            <div class="z-10 text-4xl items-center flex">
-                <Icon name={button.icon}/>
-            </div>
-            <div class="-translate-x-2 overflow-hidden opacity-0 text-left duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <h2 class="text-[20px]">{button.text}</h2>
-            </div>
-        </a>
-    {/each}
-
+<main class="hidden md:grid grid-rows-3 h-full items-center">
+    <div class></div>
+    <div class="flex flex-col gap-2 p-ui">
+        {#each middleButtons as button}
+            <a href={button.href} class="group grid grid-cols-[20%_70%] items-center p-ui hover:bg-white/10 rounded-ui">
+                <div class="text-[25px] items-center">
+                    <Icon name={button.icon}/>
+                </div>
+                <div class="absolute translate-x-12 bg-main p-ui rounded-ui overflow-hidden opacity-0 text-left duration-300 group-hover:opacity-100">
+                    <h2 class="text-[15px]">{button.text}</h2>
+                </div>
+            </a>
+        {/each}
+    </div>
+    <div class="mt-auto"></div>
 </main>

@@ -3,7 +3,13 @@ import '../styles/global.css'
 
 import Footer from '../components/Footer.svelte'
 import LeftSidebar from '../components/UI/LeftSidebar.svelte'
-const { title = "Mangase" } = Astro.props; 
+import RightSidebar from '../components/UI/RightSidebar.svelte'
+import Notice from '../components/UI/Notice.svelte'
+
+const {
+   title = "Mangase",
+   notice = "Welcome to Mangase, we hope you have a great time here!"
+} = Astro.props; 
 ---
 
 <!doctype html>
@@ -25,8 +31,10 @@ const { title = "Mangase" } = Astro.props;
 			<div class="h-full flex">
 			    <LeftSidebar />
 			    <div class="flex-1">
+			        <Notice notice={notice} />
 			        <slot />
 			    </div>
+			    <RightSidebar />
 			</div>
 		</div>
 		<div>
