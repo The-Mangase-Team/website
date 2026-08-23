@@ -5,10 +5,10 @@
       {icon: "home", href: "/home", text: "Home"},
       {icon: "search", href: "/search", text: "Search"},
       {icon: "plus", href: "/create", text: "Create"},
-      {icon: "profile", href: "/profile", text: "Profile"},
+      {icon: "blog", href: "/blogs", text: "Blogs"},
       {icon: "send", href: "/messages", text: "Messages"},
       {icon: "options", href: "/settings", text: "Settings"},
-      {icon: "blog", href: "/blogs", text: "Blogs"},
+      {icon: "profile", href: "/profile", text: "Profile"},
     ]
     
 </script>
@@ -21,7 +21,7 @@
                 <div class="text-[25px] items-center">
                     <Icon name={button.icon}/>
                 </div>
-                <div class="absolute translate-x-12 bg-main p-ui rounded-ui overflow-hidden opacity-0 text-left duration-300 group-hover:opacity-100">
+                <div class="absolute translate-x-12 bg-main p-ui font-ui rounded-ui overflow-hidden opacity-0 text-left duration-300 group-hover:opacity-100">
                     <h2 class="text-[15px]">{button.text}</h2>
                 </div>
             </a>
