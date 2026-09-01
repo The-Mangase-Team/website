@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css'
-
+import { ClientRouter } from 'astro:transitions'
 import Footer from '../components/Footer.svelte'
 import LeftSidebar from '../components/UI/LeftSidebar.svelte'
 import RightSidebar from '../components/UI/RightSidebar.svelte'
@@ -25,19 +25,20 @@ const {
 		<meta name="apple-mobile-web-app-title" content="Mangase" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ClientRouter transition:animate='none'/>
 	</head>
 	<body class="home">
-	    <div class="h-full flex-1">
-			<div class="h-full flex">
+	    <div class="flex-1">
+			<div class="min-h-screen flex">
 			    <LeftSidebar />
-			    <div class="flex-1">
-			        <Notice notice={notice} />
-			        <slot />
+			    <div class="flex-1 flex flex-col">
+					<Notice notice={notice} />
+					<slot />
 			    </div>
 			    <RightSidebar />
 			</div>
 		</div>
-		<div>
+		<div class="">
             <Footer client:load />
 		</div>
 	</body>

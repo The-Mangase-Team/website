@@ -5,7 +5,7 @@
 </script>
 
 <!-- Comics Billboard -->
-<main class="z-0 bg-white/5 flex flex-col material-glass border h-full items-center">
+<main class="z-0 bg-white/5 material-glass border flex flex-col h-full items-center">
     <div class="mx-auto border-x border-white/7 w-[95%] md:w-[45%] h-full">
 
         <!-- FOLLOWING \ FOR YOU -->
@@ -13,7 +13,7 @@
             <button class="flex-1 p-2 hover:cursor-pointer font-ui hover:bg-white/7">FOLLOWING</button>
             <button class="flex-1 p-2 hover:cursor-pointer font-ui hover:bg-white/7">FOR YOU</button>
         </div>
-        
+
         <!-- BLOGS -->
         <div class="border-b border-white/7 pt-2.5 flex flex-col">
             <div class="flex border-b border-white/7 px-2 h-full w-full">
@@ -33,7 +33,8 @@
         <!-- BLOGS -->
         <div>
             <BlogWidget />
+            <BlogWidget />
         </div>
-        
+
     </div>
 </main>

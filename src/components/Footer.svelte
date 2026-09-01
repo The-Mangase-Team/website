@@ -1,2 +1,3 @@
-<main class="text-center p-2 opacity-50 material-glass">
+<main class="p-2 w-full relative bottom-0 h-10">
+    <h1>mangase</h1>
 </main>

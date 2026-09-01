@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-
     --color-main: #212121;
     --color-primary: #000000;
     
@@ -29,15 +28,20 @@
     }
 
     .home {
+        @apply m-0;
         @apply flex flex-col;
         @apply relative;
-        @apply h-full w-full;
+        @apply min-h-screen w-full;
         @apply bg-main;
         @apply text-white;
     }
 
     .material-glass {
         @apply border-white/10;
-        @apply backdrop-blur-2xl;
     }
+}
+
+::selection {
+    background-color: #B8413B;
+    color: #301B1B;
 }
