@@ -1,0 +1,22 @@
+---
+import {Image} from 'astro:assets';
+import favicon from '../../public/favicon/favicon.svg'
+import Layout from '../layouts/Home.astro'
+---
+<Layout title="Page N0t Found" showNotice={false}>
+    <div class="h-full w-full grid m-auto p-5 py-40 justify-center">
+        <div class="p-10 h-fit rounded-ui">
+            <div class="justify-self-center">
+                <Image width="200" src={favicon} alt="Favicon" />
+            </div>
+            <h1 class="text-mobile-title font-bold text-center">NOT FOUND</h1>
+            <h2 class="italic text-center">It seems that we couldn't find the page you're looking for..</h2>
+        </div>
+
+        <div class="justify-center flex gap-10">
+            <a class="hover:underline" href="/home">Home</a>
+            <a class="hover:underline" href="/search">Search</a>
+            <a class="hover:underline" href="/create">Create</a>
+        </div>
+    </div>
+</Layout>

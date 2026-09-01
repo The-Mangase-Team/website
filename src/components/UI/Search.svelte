@@ -17,9 +17,10 @@
 
 <div class="w-full flex flex-col gap-4 font-ui">
     <div class="flex items-center bg-neutral-800 p-0 rounded-ui relative">
-        <input bind:value={searchQuery} class="w-full m-0 p-ui outline-none" placeholder="Search for Manga, Webcomics and more..">
-        <span class="group-hover:opacity-100 opacity-100 mx-4 text-[20px]">
+        <input bind:value={searchQuery} class="w-full m-0 p-ui outline-none text-ellipsis" placeholder="Search for Manga, Webcomics and more..">
+        <span class="group-hover:opacity-100 opacity-100 mx-4 text-[20px] flex gap-1">
             <Icon name="search"/>
+            <Icon name="filter"/>
         </span>
         {#if showFuzzyOptions}
             <div class="absolute z-10 top-12 rounded-b-ui w-full h-20 bg-neutral-800 p-ui flex gap-2 items-center">

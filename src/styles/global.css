@@ -13,6 +13,7 @@
     --transition-duration-ui: 100ms;
     
     --text-mobile-title: 64px;
+    --text-mobile-subtitle: 20px;
     --text-widget-title: 15px;
     --text-widget-subtitle: 7px;
 }
