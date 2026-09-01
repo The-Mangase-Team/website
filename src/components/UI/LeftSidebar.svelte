@@ -6,9 +6,8 @@
       {icon: "search", href: "/search", text: "Search"},
       {icon: "plus", href: "/create", text: "Create"},
       {icon: "blog", href: "/blogs", text: "Blogs"},
-      {icon: "send", href: "/messages", text: "Messages"},
-      {icon: "options", href: "/settings", text: "Settings"},
       {icon: "profile", href: "/profile", text: "Profile"},
+      {icon: "options", href: "/settings", text: "Settings"},
     ]
     
 </script>

@@ -3,7 +3,7 @@
     import Chat from './Chat.svelte'
 </script>
 
-<main class="z-0 bg-white/5 flex flex-col material-glass border h-full w-full">
+<main class="z-0 bg-white/5 flex flex-col material-glass border h-full w-full rounded-ui">
     <!-- TABLIST -->
     <div class="w-full material-glass h-10 flex items-center">
         <h1 class="p-2 material-glass min-w-64 ">Messages</h1>
