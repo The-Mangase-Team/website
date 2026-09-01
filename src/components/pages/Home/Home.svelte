@@ -5,5 +5,5 @@
 </script>
 
 <!-- Comics Billboard -->
-<main class="z-0 font-ui bg-white/5 flex flex-col material-glass border h-full">
+<main class="z-0 font-ui h-full">
 </main>

@@ -5,7 +5,7 @@
 </script>
 
 <!-- Comics Billboard -->
-<main class="z-0 bg-white/5 material-glass border flex flex-col h-full items-center">
+<main class="z-0 flex flex-col h-full items-center">
     <div class="mx-auto border-x border-white/7 w-[95%] md:w-[45%] h-full">
 
         <!-- FOLLOWING \ FOR YOU -->
