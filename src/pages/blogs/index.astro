@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Home.astro'
 import Blogs from '../../components/pages/Blogs/Blogs.svelte'
+
+export const prerender = false;
 ---
 <Layout title="blogs">
     <Blogs client:load />

@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Sign Out - Mangase">
+  <div class="flex items-center justify-center min-h-screen p-4">
+    <p class="text-white/60 font-mono">Signing out...</p>
+  </div>
+</Layout>
+
+<script>
+  import { authClient } from "../../lib/auth-client";
+
+  async function signOut() {
+    await authClient.signOut();
+    window.location.href = "/";
+  }
+
+  signOut();
+</script>

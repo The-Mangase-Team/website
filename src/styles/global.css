@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+
     --color-main: #212121;
     --color-primary: #000000;
     
@@ -45,4 +46,6 @@
 ::selection {
     background-color: #B8413B;
     color: #301B1B;
+    outline-color: #B8413B;
 }
+

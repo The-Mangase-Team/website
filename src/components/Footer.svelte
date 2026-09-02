@@ -3,7 +3,7 @@
 
   const links = [
     {
-      title: "Read",
+      title: "",
       items: [
         { label: "Browse Manga", href: "/browse" },
         { label: "Latest Updates", href: "/updates" },
@@ -11,7 +11,7 @@
       ],
     },
     {
-      title: "Publish",
+      title: "",
       items: [
         { label: "Upload a Series", href: "/upload" },
         { label: "Creator Dashboard", href: "/dashboard" },
@@ -19,7 +19,7 @@
       ],
     },
     {
-      title: "Company",
+      title: "",
       items: [
         { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },

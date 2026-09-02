@@ -1,0 +1,10 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SignUp from "../../components/auth/SignUp.svelte";
+---
+
+<Layout title="Sign Up - Mangase">
+  <div class="flex items-center justify-center min-h-screen p-4">
+    <SignUp client:load />
+  </div>
+</Layout>
