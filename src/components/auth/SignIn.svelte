@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { authClient } from "../../lib/auth-client";
+import Icon from 'astro-iconset/svelte'
+import { authClient } from "../../lib/auth-client";
 
   let email = $state("");
   let password = $state("");
@@ -43,6 +44,10 @@
   }
 </script>
 
+<h1 class="text-mobile-title translate-y-5 font-black md:text-9xl mx-5">
+    <Icon name="mangase/wordmark"/>
+</h1>
+
 <div class="w-full max-w-sm material-glass border p-8 rounded-lg">
   <h1 class="text-2xl font-bold text-center mb-6 font-mono">Sign In</h1>
 
@@ -80,7 +85,7 @@
     <button
       type="submit"
       disabled={loading}
-      class="w-full bg-white/10 border border-white/10 hover:bg-white/20 text-white font-mono py-2 rounded transition-colors disabled:opacity-50"
+      class="w-full bg-white/10 hover:cursor-pointer border border-white/10 hover:bg-white/20 text-white font-mono py-2 rounded transition-colors disabled:opacity-50"
     >
       {loading ? "Signing in..." : "Sign In"}
     </button>
@@ -98,13 +103,13 @@
   <div class="flex flex-col gap-2">
     <button
       onclick={handleGoogleSignIn}
-      class="w-full bg-white/5 border border-white/10 hover:bg-white/10 text-white font-mono py-2 rounded transition-colors text-sm"
+      class="w-full bg-white/5 hover:cursor-pointer border border-white/10 hover:bg-white/10 text-white font-mono py-2 rounded transition-colors text-sm"
     >
       Continue with Google
     </button>
     <button
       onclick={handleGitHubSignIn}
-      class="w-full bg-white/5 border border-white/10 hover:bg-white/10 text-white font-mono py-2 rounded transition-colors text-sm"
+      class="w-full bg-white/5 hover:cursor-pointer border border-white/10 hover:bg-white/10 text-white font-mono py-2 rounded transition-colors text-sm"
     >
       Continue with GitHub
     </button>

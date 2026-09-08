@@ -1,9 +1,22 @@
 <script>
-    import MostPopular from '../../sections/Home/MostPopular.svelte';
-    import NewlyAdded from '../../sections/Home/NewlyAdded.svelte';
-    import RecentlyAdded from '../../sections/Home/RecentlyAdded.svelte';
+    import InfiniteScroller from "./Components/InfiniteScroller.svelte";
+    import Sidescroller from "./Components/Sidescroller.svelte";
+    import Spotlight from "./Components/Spotlight.svelte";
+    
 </script>
 
 <!-- Comics Billboard -->
-<main class="z-0 font-ui h-full">
+<main class="z-0 font-ui w-full flex flex-col gap-1">
+
+    <!-- SPOTLIGHT SECTION -->
+    <!-- <Spotlight /> -->
+
+    <!-- RECENTLY UPDATED -->
+    <!-- <Sidescroller title="RECENTLY UPDATED"/> -->
+
+    <!-- MOST POPULAR -->
+    <!-- <Sidescroller title="MOST POPULAR"/> -->
+
+    <!-- NEWLY ADDED -->
+    <!-- <InfiniteScroller title="NEWLY ADDED"/> -->
 </main>

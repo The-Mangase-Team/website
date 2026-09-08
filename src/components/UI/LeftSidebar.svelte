@@ -15,7 +15,7 @@
 <main class="hidden z-11 md:flex flex-col min-h-screen">
     <div class="flex flex-col gap-2 p-ui sticky top-1/2 -translate-y-1/2">
         {#each middleButtons as button}
-            <a href={button.href} class="group grid grid-cols-[20%_70%] items-center p-ui hover:bg-white/10 rounded-ui">
+            <a href={button.href} class="group select-none grid grid-cols-[20%_70%] items-center p-ui hover:bg-white/10 rounded-ui">
                 <div class="text-[20px]">
                     <Icon name={button.icon}/>
                 </div>

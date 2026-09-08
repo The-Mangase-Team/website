@@ -2,6 +2,7 @@
 import {Image} from 'astro:assets';
 import favicon from '../../public/favicon/favicon.svg'
 import Layout from '../layouts/Home.astro'
+export const prerender = false;
 ---
 <Layout title="Page Not Found" showNotice={false}>
     <div class="h-full w-full grid m-auto p-5 py-40 justify-center">

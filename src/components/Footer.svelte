@@ -31,7 +31,7 @@
 </script>
 
 <footer class="bg-neutral-900 border-t border-neutral-800 text-neutral-400 font-sans">
-  <div class="max-w-5xl mx-auto px-6 pt-10 pb-6">
+  <div class="max-w-5xl mx-auto px-6 pt-3 pb-4">
     <div class="flex flex-wrap justify-between gap-8">
       <div>
         <span class="text-xl font-bold tracking-wide text-neutral-200">mangase</span>
