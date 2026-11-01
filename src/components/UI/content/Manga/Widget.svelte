@@ -5,4 +5,4 @@
     
 </script>
 
-<main class="shrink-0 aspect-[0.707] w-45 bg-white/5 rounded-ui"></main>
+<main class="shrink-0 w-36 aspect-[1/1.414] bg-black"></main>
