@@ -1,6 +1,5 @@
 import { defineMiddleware } from "astro:middleware";
 import { auth } from "./lib/auth";
-
 // Routes that NEED a logged in user.
 const protectedRoutes = ["/user", "/create"];
 const publicRoutes = ["/", "/signin", "/signup", "/signout", "/api/auth/*"];
