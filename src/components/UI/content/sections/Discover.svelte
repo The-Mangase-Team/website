@@ -3,7 +3,7 @@
     import MangaWidget from '../Manga/Widget.svelte'
 
 </script>
-<main class="mt-30 md:mb-20 ">
+<main class="">
 
     <section
       class="w-90 md:w-259 mx-auto flex flex-row gap-1
