@@ -1,9 +1,9 @@
 ---
 import Search from "../../UI/Search.svelte";
 // import Spotlight from "./Components/Spotlight.svelte";
-import MangaWidget from "../../UI/content/Manga/Widget.svelte";
 import Discover from "../../UI/content/sections/Discover.svelte";
 import Reviews from "../../UI/content/sections/Reviews.astro";
+import Shelf from "../../UI/content/sections/Shelf.svelte";
 ---
 
 <!-- Comics Billboard -->
@@ -15,15 +15,9 @@ import Reviews from "../../UI/content/sections/Reviews.astro";
         </div>
     </div>
 
-    <!-- RECENTLY UPDATED -->
-    <div class="flex flex-col mb-10">
-        <div class="w-90 md:w-259 mx-auto box-border h-auto flex snap-x snap-mandatory overflow-x-auto overflow-y-hidden gap-1">
-            <MangaWidget />
-            <MangaWidget />
-            <MangaWidget />
-            <MangaWidget />
-            <MangaWidget />
-        </div>
+    <!-- New Chapters / Continue Reading -->
+    <div>
+        <Shelf />
     </div>
 
     <!-- Newly Added / Most Popular (toggle) -->

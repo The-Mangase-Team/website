@@ -5,7 +5,7 @@
 
 <main class="flex flex-col gap-1">
 
-    <select class="w-fit select-none text-xl md:text-3xl outline-0">
+    <select class="w-fit select-none text-xl md:text-2xl outline-0">
         <option class="">New Additions</option>
         <option class="">Most Popular</option>
     </select>
@@ -26,4 +26,9 @@
         <MangaWidget />
         <MangaWidget />
     </section>
+
+    <!-- See More -->
+    <div class="w-full flex-1 ml-auto ">
+        <button class="px-2 py-1 rounded-xl cursor-pointer border material-glass bg-black/15">See More</button>
+    </div>
 </main>
