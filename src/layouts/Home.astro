@@ -1,93 +1,100 @@
 ---
-import '../styles/global.css'
-import { ClientRouter } from 'astro:transitions'
-import Footer from '../components/Footer.svelte'
-import LeftSidebar from '../components/UI/LeftSidebar.svelte'
-import RightSidebar from '../components/UI/RightSidebar.svelte'
-import Notice from '../components/UI/Notice.svelte'
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Footer from "../components/Footer.svelte";
+import LeftSidebar from "../components/UI/LeftSidebar.svelte";
+import RightSidebar from "../components/UI/RightSidebar.svelte";
+import Notice from "../components/UI/Notice.svelte";
 
 const {
-   title = "Mangase",
-   notice = "Welcome to Mangase, we hope you have a great time here!",
-   showNotice = true
-} = Astro.props; 
+    title = "Mangase",
+    notice = "Welcome to Mangase, we hope you have a great time here!",
+    showNotice = true,
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-		<link rel="shortcut icon" href="/favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-		<link rel="manifest" href="/favicon/site.webmanifest" />
-		<meta name="apple-mobile-web-app-title" content="Mangase" />
-		<meta name="generator" content={Astro.generator} />
-		<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
-		<title>{title}</title>
-	</head>
-	<body class="home">
-	    <div class="flex-1 flex flex-col">
-			<div class="flex-1 flex">
-			    <LeftSidebar />
-			    <div class="flex-1 flex flex-col bg-white/5 material-glass md:border">
-					{showNotice && <Notice notice={notice} />}
-					<slot />
-			    </div>
-			    <!-- <RightSidebar /> -->
-			</div>
-		</div>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <meta name="apple-mobile-web-app-title" content="Mangase" />
+        <meta name="generator" content={Astro.generator} />
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"
+        />
+        <title>{title}</title>
+    </head>
+    <body class="home">
+        <div class="w-full flex flex-col">
+            <div class="flex flex-1 flex-col bg-white/5 material-glass">
+                <slot />
+            </div>
+        </div>
+    </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-	.pace {
-		-webkit-pointer-events: none;
-		pointer-events: none;
-	
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		user-select: none;
-	
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-	
-		-webkit-transform: translate3d(0, -50px, 0);
-		-ms-transform: translate3d(0, -50px, 0);
-		transform: translate3d(0, -50px, 0);
-	
-		-webkit-transition: transform .5s ease-out;
-		-ms-transition: transform .5s ease-out;
-		transition: transform .5s ease-out;
-	}
-	
-	.pace.pace-active {
-		-webkit-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	
-	.pace .pace-progress {
-		display: block;
-		position: fixed;
-		z-index: 2000;
-		top: 0;
-		right: 100%;
-		width: 100%;
-		height: 10px;
-		background: #b3374a;
-	
-		pointer-events: none;
-	}
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .pace {
+        -webkit-pointer-events: none;
+        pointer-events: none;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        -webkit-transform: translate3d(0, -50px, 0);
+        -ms-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+
+        -webkit-transition: transform 0.5s ease-out;
+        -ms-transition: transform 0.5s ease-out;
+        transition: transform 0.5s ease-out;
+    }
+
+    .pace.pace-active {
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .pace .pace-progress {
+        display: block;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 10px;
+        background: #b3374a;
+
+        pointer-events: none;
+    }
 </style>
