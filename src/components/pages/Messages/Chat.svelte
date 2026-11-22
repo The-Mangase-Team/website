@@ -15,7 +15,7 @@
         <div class="grid-1 flex-5 p-2 "></div>
 
         <!-- SEND MESSAGE -->
-        <div class="m-1 px-2 flex text-[17px] items-center  bg-black/7 border border-black/20 rounded-ui">
+        <div class="m-1 px-2 flex text-[17px] items-center  bg-black/7 border border-white/20 rounded-ui">
             <input class="flex-5 text-white p-2 outline-0" type="text">
             <button class="p-2 rounded-ui hover:cursor-pointer hover:bg-black/70">
                 <Icon name="plus" />
