@@ -2,6 +2,7 @@
 import Search from "../../UI/Search.svelte";
 // import Spotlight from "./Components/Spotlight.svelte";
 import Discover from "../../UI/content/sections/Discover.svelte";
+import Bookmarks from "../../UI/content/sections/Bookmarks.svelte";
 import Reviews from "../../UI/content/sections/Reviews.astro";
 import Shelf from "../../UI/content/sections/Shelf.svelte";
 ---
@@ -20,6 +21,11 @@ import Shelf from "../../UI/content/sections/Shelf.svelte";
         <Shelf />
     </div>
 
+    <!-- Bookmarks / Planned to Read -->    
+    <div class="md:mb-10">
+        <Bookmarks />
+    </div>
+    
     <!-- Newly Added / Most Popular (toggle) -->
     <div class="">
         <Discover />
