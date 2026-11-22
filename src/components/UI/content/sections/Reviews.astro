@@ -25,7 +25,7 @@ import { Icon } from "astro-icon/components";
                         ease: "power2.out",
                         scrollTrigger: {
                             trigger: el,
-                            start: "top 70%",
+                            start: "top 100%",
                             once: false,
                         },
                     },
@@ -38,7 +38,7 @@ import { Icon } from "astro-icon/components";
     document.addEventListener("astro:page-load", initAnimation);
 </script>
 
-<main class="reviewWidget my-20 md:max-w-250 w-full flex md:flex-row flex-col items-center gap-10">
+<main class="reviewWidget md:max-w-250 w-full flex md:flex-row flex-col items-center gap-10">
     <button class="hidden group text-5xl md:flex">
         <Icon
             class="group-hover:hidden block"

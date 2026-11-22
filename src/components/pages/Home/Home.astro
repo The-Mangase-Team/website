@@ -7,7 +7,7 @@ import Reviews from "../../UI/content/sections/Reviews.astro";
 ---
 
 <!-- Comics Billboard -->
-<main class="z-0 font-ui m-auto max-w-900 flex flex-col gap-10 px-2 md:px-33">
+<main class="z-0 font-ui m-auto max-w-900 flex flex-col gap-4 px-2 md:px-33">
     <!-- SEARCH BAR -->
     <div class="w-full flex flex-row mb-2.5 mt-3">
         <div class="m-auto">
@@ -16,7 +16,7 @@ import Reviews from "../../UI/content/sections/Reviews.astro";
     </div>
 
     <!-- RECENTLY UPDATED -->
-    <div class="flex flex-col">
+    <div class="flex flex-col mb-10">
         <div class="w-90 md:w-259 mx-auto box-border h-auto flex snap-x snap-mandatory overflow-x-auto overflow-y-hidden gap-1">
             <MangaWidget />
             <MangaWidget />
@@ -32,7 +32,7 @@ import Reviews from "../../UI/content/sections/Reviews.astro";
     </div>
 
     <!-- REVIEWS -->
-    <div class="w-full justify-items-center">
+    <div class="w-full justify-items-center md:mt-30 md:mb-20">
         <Reviews />
     </div>
 </main>
