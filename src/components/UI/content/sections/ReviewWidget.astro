@@ -1,0 +1,42 @@
+---
+import ProfilePlaceholder from "../../../../assets/images/placeholder/profile.jpg";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="flex flex-col gap-2 cursor-pointer bg-black/40 rounded-xl md:bg-transparent p-2">
+    <div class="flex">
+        <!-- MANGA COVER -->
+        <div class="shrink-0 grow-0 aspect-[0.707] w-30 rounded-xl md:w-70 bg-black"></div>
+        
+        <!-- Review -->
+        <div class="md:p-10 p-2 flex flex-col gap-5 my-auto">
+            
+            <!-- PROFILE DETAILS -->
+            <div class="flex items-center gap-2">
+                <!-- PROFILE IMAGE -->
+                <img
+                    class="w-7 rounded-full"
+                    src={ProfilePlaceholder.src}
+                    alt="profilePic"
+                />
+                <h1>barden</h1>
+            </div>
+    
+            <p class="text-[10px] md:text-xl italic min-w-0">
+                Nisio Isin's Monogatari series stands apart in light novels. Its
+                razor-sharp dialogue and playful wordplay turn Araragi's encounters
+            </p>
+    
+            <!-- Extra -->
+            <div>
+                <h1 class="text-4xl font-bold font-review">9.3/10</h1>
+            </div>        
+        </div>
+    </div>
+
+    <!-- MOBILE VIEW BUTTONS -->
+    <div class="md:hidden flex">
+        <button class="flex-1 p-2 text-[14px] rounded-xl border material-glass">Add to Bookmarks</button>
+    </div>
+    
+</div>

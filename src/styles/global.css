@@ -4,15 +4,18 @@
 
     --color-main: #212121;
     --color-primary: #000000;
-    
+
     /* UI */
-    --font-ui: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-ui: "Nexa Extralight";
     --padding-ui: 8px;
     --gap-ui: 8px;
     --radius-ui: 8px;
-    
+
+    /* FONTS */
+    --font-review: "Nexa Heavy";
+
     --transition-duration-ui: 100ms;
-    
+
     --text-mobile-title: 64px;
     --text-mobile-subtitle: 20px;
     --text-widget-title: 15px;
@@ -21,7 +24,6 @@
 
 @layer {
     .page {
-        @apply p-2;
         @apply flex flex-col;
         @apply relative;
         @apply min-h-screen w-full;
@@ -43,9 +45,30 @@
     }
 }
 
+@utility duration-ui {
+    transition-duration: var(--transition-duration-ui);
+}
+
 ::selection {
     background-color: #B8413B;
     color: #301B1B;
     outline-color: #B8413B;
 }
 
+/* FONTS */
+@font-face {
+	font-family: "Nexa Heavy";
+	src: url("../assets/fonts/Nexa-Heavy.ttf");
+}
+@font-face {
+	font-family: "Nexa Extralight";
+	src: url("../assets/fonts/Nexa-ExtraLight.ttf");
+}
+@font-face {
+	font-family: "BRUNSON";
+	src: url("../assets/fonts/Brunson.ttf");
+}
+
+.reviewWidget {
+    visibility: hidden;
+}

@@ -19,7 +19,7 @@
                 <div class="text-[20px]">
                     <Icon name={button.icon}/>
                 </div>
-                <div class="absolute translate-x-10 bg-main p-ui font-ui rounded-ui scale-0 opacity-0 text-left duration-100 group-hover:opacity-100 transition-opacity group-hover:scale-100">
+                <div class="absolute translate-x-10 bg-main p-ui font-ui rounded-ui scale-0 opacity-0 text-left duration-ui group-hover:opacity-100 transition-opacity group-hover:scale-100">
                     <h2 class="text-[15px]">{button.text}</h2>
                 </div>
             </a>

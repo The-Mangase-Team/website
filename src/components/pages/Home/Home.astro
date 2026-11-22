@@ -1,0 +1,32 @@
+---
+import Search from "../../UI/Search.svelte";
+// import Spotlight from "./Components/Spotlight.svelte";
+import Discover from "../../UI/content/sections/Discover.svelte";
+import Reviews from "../../UI/content/sections/Reviews.astro";
+import Shelf from "../../UI/content/sections/Shelf.svelte";
+---
+
+<!-- Comics Billboard -->
+<main class="z-0 font-ui m-auto max-w-900 flex flex-col gap-4 px-2 md:px-33">
+    <!-- SEARCH BAR -->
+    <div class="w-full flex flex-row mb-2.5 mt-3">
+        <div class="m-auto">
+            <Search />
+        </div>
+    </div>
+
+    <!-- New Chapters / Continue Reading -->
+    <div>
+        <Shelf />
+    </div>
+
+    <!-- Newly Added / Most Popular (toggle) -->
+    <div class="">
+        <Discover />
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="w-full justify-items-center md:mt-30 md:mb-20">
+        <Reviews />
+    </div>
+</main>
