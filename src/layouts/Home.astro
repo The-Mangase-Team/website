@@ -7,7 +7,7 @@ import RightSidebar from "../components/UI/RightSidebar.svelte";
 import Notice from "../components/UI/Notice.svelte";
 
 const {
-    title = "Mangase",
+    title = "Mangase | Read Mangas, Webcomics and Novels Online, Earn Money",
     notice = "Welcome to Mangase, we hope you have a great time here!",
     showNotice = true,
 } = Astro.props;
@@ -43,7 +43,7 @@ const {
     </head>
     <body class="home">
         <div class="w-full flex flex-col">
-            <div class="flex flex-1 flex-col bg-white/5 material-glass">
+            <div class="flex flex-1 flex-col bg-white/5 material-glass md:px-15">
                 <slot />
             </div>
         </div>
