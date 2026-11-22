@@ -42,6 +42,10 @@
     }
 }
 
+@utility duration-ui {
+    transition-duration: var(--transition-duration-ui);
+}
+
 ::selection {
     background-color: #B8413B;
     color: #301B1B;
