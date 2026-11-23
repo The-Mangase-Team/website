@@ -19,6 +19,7 @@
     "@astrojs/node": "^11.1.5",
     "@astrojs/svelte": "^9.0.1",
     "@iconify-json/material-symbols-light": "^1.2.102",
+    "@iconify-json/mdi": "^1.2.3",
     "@neondatabase/serverless": "^1.1.0",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.2.4",

@@ -1,23 +1,48 @@
 ---
 import Search from "../../UI/Search.svelte";
-// import Spotlight from "./Components/Spotlight.svelte";
 import Discover from "../../UI/content/sections/Discover.svelte";
+import Bookmarks from "../../UI/content/sections/Bookmarks.svelte";
 import Reviews from "../../UI/content/sections/Reviews.astro";
 import Shelf from "../../UI/content/sections/Shelf.svelte";
+
+// Placeholders
+import ProfilePortfolio from "../../../assets/images/placeholder/profile.jpg";
+import Mangase from "../../../assets/icons/mangase/wordmark.svg";
 ---
 
 <!-- Comics Billboard -->
-<main class="z-0 font-ui m-auto max-w-900 flex flex-col gap-4 px-2 md:px-33">
-    <!-- SEARCH BAR -->
-    <div class="w-full flex flex-row mb-2.5 mt-3">
-        <div class="m-auto">
-            <Search />
+<main class="z-0 font-ui max-w-900 flex flex-col gap-4 px-2 md:px-33">
+    <!-- TOP BAR -->
+    <div class="w-full flex flex-row md:mb-7.5 mt-3 items-center px-2">
+        <div class="hidden md:flex">
+            <a href="/">
+                <img class="w-25" src={Mangase.src} />
+            </a>
+        </div>
+        <div class="flex-1 m-auto flex justify-center">
+            <div class="md:w-75 w-50">
+                <Search />
+            </div>
+        </div>
+        <div class="hidden md:flex">
+            <a href="/user/barden" class="cursor-pointer">
+                <img
+                    class="aspect-square w-10 rounded-full"
+                    src={ProfilePortfolio.src}
+                />
+            </a>
         </div>
     </div>
 
     <!-- New Chapters / Continue Reading -->
     <div>
+        <h1 class="text-xl p-2">New Chapters / Continue Reading</h1>
         <Shelf />
+    </div>
+
+    <!-- Bookmarks / Planned to Read -->
+    <div class="md:mb-10">
+        <Bookmarks />
     </div>
 
     <!-- Newly Added / Most Popular (toggle) -->
@@ -26,7 +51,7 @@ import Shelf from "../../UI/content/sections/Shelf.svelte";
     </div>
 
     <!-- REVIEWS -->
-    <div class="w-full justify-items-center md:mt-30 md:mb-20">
+    <div class="w-full justify-items-center md:mt-15 md:mb-20">
         <Reviews />
     </div>
 </main>
